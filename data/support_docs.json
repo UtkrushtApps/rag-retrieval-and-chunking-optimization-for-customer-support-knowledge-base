@@ -1,0 +1,17 @@
+[
+  {
+    "doc_id": "DOC001",
+    "content": "User cannot login to the dashboard. Error code 403. ... (full doc text)",
+    "category": "Authentication",
+    "priority": "High",
+    "date": "2023-05-12"
+  },
+  {
+    "doc_id": "DOC002",
+    "content": "API returns timeout for order retrieval. ... (full doc text)",
+    "category": "Performance",
+    "priority": "Medium",
+    "date": "2023-06-21"
+  }
+  // ... 8000 total docs, each with category, priority, date and content
+]
