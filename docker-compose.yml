@@ -1,0 +1,15 @@
+services:
+  chroma-db:
+    image: chromadb/chroma
+    container_name: chroma-db
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/chroma_data
+    environment:
+      CHROMA_DATA_PATH: /chroma_data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/collections"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
